@@ -20,7 +20,8 @@
     "cordova-android": "10.1.2",
     "cordova-browser": "^6.0.0",
     "cordova-electron": "^3.1.0",
-    "cordova-ios": "6.2.0"
+    "cordova-ios": "6.2.0",
+    "cordova-plugin-file": "^7.0.0"
   },
   "cordova": {
     "platforms": [
@@ -29,17 +30,35 @@
       "browser",
       "android"
     ],
-    "plugins": {}
+    "plugins": {
+      "cordova-plugin-file": {}
+    }
   },
   "frontle": {
     "dependencies": {
       "jquery": {},
       "@frontle/frontle-core": {
         "noBuild": true
+      },
+      "@frontle/bottomsheet": {
+        "noBuild": true
+      },
+      "@frontle/cordova-getplatformid": {
+        "noBuild": true
+      },
+      "@frontle/cordova-fileutil": {
+        "noBuild": true
+      },
+      "@frontle/cordova-keyvaluestorage": {
+        "noBuild": true
       }
     }
   },
   "dependencies": {
+    "@frontle/bottomsheet": "^1.0.1",
+    "@frontle/cordova-fileutil": "^1.0.1",
+    "@frontle/cordova-getplatformid": "^1.0.1",
+    "@frontle/cordova-keyvaluestorage": "^1.0.1",
     "@frontle/frontle-core": "^1.0.2",
     "jquery": "^3.6.1"
   }
